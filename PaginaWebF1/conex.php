@@ -9,7 +9,7 @@ if ($host_actual == "localhost" || $host_actual == "127.0.0.1") {
     $usuario  = "root";
     $password = ""; // En casa suele estar vacío
     $BDD      = "grupo5_f1bilbao";
-    $puerto   = "3307"; // O 3307 si lo cambiaste en casa
+    $puerto   = "3306"; // O 3307 si lo cambiaste en casa
 } else {
     // --- CONFIGURACIÓN PARA EL SERVIDOR DEL CENTRO (Ubuntu) ---
     // Usamos la IP interna o el nombre del servidor
@@ -32,4 +32,5 @@ if (!$conexion) {
     echo "</div>";
     exit;
 }
+
 ?>
